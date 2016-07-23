@@ -13,7 +13,7 @@ exports.findAll = function (req, res, next) {
     var name = req.query.name;
     if (name) {
         res.send(employees.filter(function(employee) {
-            return (employee.firstName + ' ' + employee.lastName).toLowerCase().indexOf(name.toLowerCase()) > -1;
+            return (employee.firstName + ' ' + employee.lastName + ' ' + employee.title).toLowerCase().indexOf(name.toLowerCase()) > -1;
         }));
     } else {
         res.send(employees);
