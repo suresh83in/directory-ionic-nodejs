@@ -1,28 +1,14 @@
-[![Deploy](https://www.herokucdn.com/deploy/button.png)](https://heroku.com/deploy)
 
-# Employee Directory with Ionic and Node
 
-Employee directory is a sample application that allows you to look up employees by name, view the details of an employee,
-call, text, or email an employee, and navigate up and down the org chart.
+# Contact details within Org
 
-This version of Employee Directory is built with [Ionic](http://ionicframework.com/) and [Node.js]().
-
-![alt tag](assets/directory_search.png)
-
-![alt tag](assets/directory_details.png)
-
-![alt tag](assets/directory_reports.png)
+PMD contacts is a an application that allows you to look up employees by name or role, view the details of an employee,
+call, text, or email an employee, and navigate up and down the org chart. 
 
 You can test the application in your browser:
-- Using the hosted version
 - By running the application's Node.js server locally
-- By deploying the application's Node.js server on Heroku
 
 You can also run the application as a hybrid app in Cordova.
-
-## Hosted Version
-
-Click [here](http://ionic-directory.herokuapp.com) to run the hosted version in your browser.
 
 ## Running the Node.js Server Locally
 
@@ -46,10 +32,6 @@ Click [here](http://ionic-directory.herokuapp.com) to run the hosted version in 
 
 1. Open a browser and access: [http://localhost:5000](http://localhost:5000)
 
-
-## Deploying the Node.js Server to Heroku
-
-Click the "Deploy to Heroku" button at the top of this page to deploy the application to your own Heroku instance.
 
 
 ## Running in Cordova
@@ -99,7 +81,7 @@ Click the "Deploy to Heroku" button at the top of this page to deploy the applic
  ```
  angular.module('directory.services', ['ngResource'])
      .factory('Employees', function ($resource) {
-         return $resource('http://ionic-directory.herokuapp.com/employees/:employeeId/:data');
+         return $resource('http://server-ip:port/employees/:employeeId/:data');
      });
  ```
 
