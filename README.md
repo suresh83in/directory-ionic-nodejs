@@ -2,7 +2,7 @@
 
 # Contact details within Org
 
-PMD contacts is a an application that allows you to look up employees by name or role, view the details of an employee,
+employee contacts is a an application that allows you to look up employees by name or role, view the details of an employee,
 call, text, or email an employee, and navigate up and down the org chart. 
 
 You can test the application in your browser:
